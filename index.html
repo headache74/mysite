@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Сергей Носков</title>
+	<meta charset="utf-8">
+	<link rel="preload" href="fonts/roboto.woff2" as="font" type="font/woff2">
+	<link rel="preload" href="fonts/robotobold.woff2" as="font" type="font/woff2">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/all.js"></script>
+    <script src="js/script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<div class="callback__popup">
+		<form class="callback__form" method="post">
+			<div>Заполните форму и я свяжусь с Вами в течение 15 минут.<br><br></div>
+			<div><label class="callback__form_label">Вас зовут</label></div>
+			<input type="text" class="callback__form_element" id="callback__name" placeholder="Сергей" required="required">
+			<div><label class="work-element">Ваш номер телефона</label></div>
+			<input type="text" class="callback__form_element" id="callback__phone" placeholder="+7 (951) 777-24-49" required="required">
+			<div><label class="work-element">Ваши пожелания</label></div>
+			<div><textarea id="callback__description" required="required" cols="22" rows="6"></textarea></div>
+			<div><button type="submit" class="btn-callback-apply">Заказать звонок</button></div>
+		</form>
+	</div>
+
+	<header class="header">
+		<div class="popup" >
+			<div class="popup__container">
+		        <nav class="popup__menu">
+		          <ul>
+		            <li><a href="#mark__services">Услуги</a><br></li>
+		            <li><a href="#mark__portfolio">Портфолио</a><br></li>
+		            <li><a href="#mark__price">Стоимость</a><br></li>
+		          </ul>
+		        </nav>
+	 			<button class="popup__btn callback-button">Заказать звонок</button>
+ 			</div>
+	    </div>
+
+		<div class="container">
+			<div class="header__container">
+				<button class="header__menu_mob"></button>			
+				<nav class="header__menu">
+					<ul>
+			            <li><a href="#mark__services">Услуги</a><br></li>
+			            <li><a href="#mark__portfolio">Портфолио</a><br></li>
+			            <li><a href="#mark__price">Стоимость</a></li>
+					</ul>
+				</nav>
+				<div class="header__tel">
+					<a href="tel:+79517772449">+7 (922) 700-04-66</a>
+				</div>
+				<div class="header__btn_div"><button class="header__btn callback-button">Заказать звонок</button></div>
+				<button class="header__btn_mob callback-button"></button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="general">
+		  <div class="general__free-element general__hooks">{ }</div>
+		  <div class="general__free-element general__div_small">&lt;div&gt;</div>
+		  <div class="general__free-element general__div_big">&lt;div&gt;</div>
+		  <div class="general__free-element general__octotorp">#</div>
+		  <div class="general__free-element general__tag">&lt;/&gt;</div>
+		  <div class="general__ellipse">
+		    <svg width="814px" height="630px" viewBox="0 0 814 630" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+		      <defs>
+          		<linearGradient id="gradient" y2="100%">
+				    <stop offset="0%" stop-color="#FD895C"/>
+				    <stop offset="100%" stop-color="#FF2F96"/>
+				</linearGradient>
+		      </defs>
+		      <path fill="url(#gradient)" d="M395.52 40.407C502.261-10.05 602.994-10.204 687.212 27.67c84.435 37.567 152.356 113.165 198.491 207.114 44.27 94.884 44.223 196.799 8.068 279.242-36.656 83.673-97.666 146.755-180.805 191.777-44.03 22.669-90.312 38.198-149.148 47.731-58.06 9.394-128.676 12.79-203.493 7.944-148.474-9.32-314.876-53.081-349.967-151.79-19.887-49.012-7.404-105.197 17.32-161.739 25.13-56.624 62.503-113.604 101.74-166.115 39.645-52.593 81.155-100.717 123.891-141.53C296.45 99.41 340.817 65.828 395.52 40.408z"/>
+		    </svg>
+		  </div>
+		  <div class="container">
+		    <figure class="general__wrap">
+		      <figcaption class="general__txt">
+		      	<div class="">
+			        <hgroup class="general__hgroup">
+			          <h1 class="general__title">Сергей Носков</h1>
+			          <h2 class="general__subtitle">Frontend-разработчик и веб-верстальщик</h2>
+			        </hgroup>
+			        <button class="general__btn">Узнать больше</button>
+		        </div>
+		      </figcaption>
+		      <div class="general__pic">
+		        <img src="img/me.png" alt="Сергей Носков | Frontend-разработчик и веб-верстальщик">
+		      </div>
+		    </figure>
+		  </div>	
+		</section>
+		<section class="main__services" id="mark__services">
+			<div class="container">
+				<section class="services">
+					<div class="services__top"><h1>Что я делаю</h1></div>
+					<div class="services__job">
+						<figure>
+						    <img src="img/job-1.png" alt="Вёрстка лендинг-страниц и сайтов любой сложности" />
+						    <figcaption class="services__job_caption">Вёрстка лендинг-страниц<br>и сайтов любой&nbsp;сложности</figcaption>
+					   </figure>					
+					</div>
+					<div class="services__job">
+					   <figure>
+						    <img src="img/job-2.png" alt="Адаптивная вёрстка под все браузеры и устройства" />
+						    <figcaption class="services__job_caption">Адаптивная вёрстка под<br>все&nbsp;браузеры&nbsp;и&nbsp;устройства</figcaption>
+					   </figure>					
+					</div>
+					<div class="services__job">
+						<figure>
+						    <img src="img/job-3.png" alt="Frontend-разработка и программирование" />
+						    <figcaption class="services__job_caption">Frontend-разработка<br>и программирование</figcaption>
+					   </figure>					
+					</div>
+					<div class="services__job">
+						<figure>
+						    <img src="img/job-4.png" alt="Исправление и доработка существующей вёрстки" />
+						    <figcaption class="services__job_caption">Исправление и доработка<br>существующей&nbsp;вёрстки</figcaption>
+					   </figure>					
+					</div>
+					<div class="services__btn">
+						<a href="#mark__price">Узнать стоимость</a>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="portfolio" id="mark__portfolio">
+			<div class="container">
+				<div class="portfolio__container">
+					<div class="portfolio__top">
+						<h1>Примеры моих работ</h1>
+					</div>
+					<button class="btn-arrow__left"></button>
+					<button class="btn-arrow__right"></button>
+					<div class="portfolio__examples">
+						<div class="slider__curtains_left"></div>
+						<div class="slider__curtains_right"></div>
+						<div class="portfolio__examples_0">
+								<figure>
+							    	<a href="http://zatochka-maksimum.tmweb.ru/" target="_blank"><img src="img/maksimum.jpg" alt="Сайт студии заточки Максимум" /></a>
+							    <figcaption class="portfolio__examples_txt">
+							    	Сайт студии заточки<br>&laquo;Максимум&raquo;
+								</figcaption>
+					   			</figure>
+						</div>
+						<div class="portfolio__examples_1">
+								<figure>
+							    	<a href="http://zatochka-maksimum.tmweb.ru/" target="_blank"><img src="img/maksimum.jpg" alt="Сайт студии заточки Максимум" /></a>
+							    <figcaption class="portfolio__examples_txt">
+							    	Сайт студии заточки<br>&laquo;Максимум&raquo;
+								</figcaption>
+					   			</figure>
+						</div>
+						<div class="portfolio__examples_2">
+							<figure>
+						    	<a href="http://zatochka-maksimum.tmweb.ru/"><img src="img/maksimum.jpg" alt="Сайт студии заточки Максимум" /></a>
+						    <figcaption class="portfolio__examples_txt">
+						    	Сайт студии заточки<br>&laquo;Максимум&raquo;
+							</figcaption>
+							</figure>
+						</div>
+						<div class="portfolio__examples_3">
+							<figure>
+						    	<a href="#"><img src="img/example-3.jpg" alt="Сайт психолога Веры Антоновой" /></a>
+						    <figcaption class="portfolio__examples_txt">
+						    	Сайт психолога Веры Антоновой
+							</figcaption>
+							</figure>
+						</div>
+						<div class="portfolio__examples_4">
+							<figure>
+						    	<a href="#"><img src="img/example-4.jpg" alt="Сайт психолога Веры Антоновой" /></a>
+						    <figcaption class="portfolio__examples_txt">
+						    	Сайт психолога Веры Антоновой
+							</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="slider__buttons">
+						<input name="dzen" type="radio" class="slider__radio_left">
+						<input name="dzen" type="radio" class="slider__radio_center">
+						<input name="dzen" type="radio" class="slider__radio_right">
+					</div>
+					<div class="portfolio__bottom">
+						<button class="portfolio__btn">Заказать проект</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="price" id="mark__price">
+			<div class="price__container">
+				<h1>Адаптивная вёрстка под все устройства и браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*</h1>
+				<h6>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности&nbsp;задач.</h6>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__container">
+				<div class="footer__left">
+					<ul>
+		            	<li><a href="#mark__services">Услуги</a></li>
+		            	<li><a href="#mark__portfolio">Портфолио</a></li>
+		            	<li><a href="#mark__price">Стоимость</a></li>
+		          	</ul>
+				</div>
+				<div class="footer__center">
+					<i class="fas fa-phone-alt"></i><a href="tel:+79227000446">+7 (922) 700-04-46</a>
+					<br>
+					<i class="fas fa-envelope"></i><a href="mailto:sergeforce@mail.ru">sergeforce@mail.ru</a>
+				</div>
+				<div class="footer__right">
+					<div><button class="footer__btn callback-button">Заказать звонок</button></div>
+					<br>
+					<div class="footer__social">
+						<a href="https://vk.com/sergeforce" class="vk" target="_blank"></a>
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>		
+						<a href="https://www.instagram.com/headache74/" class="instagram" target="_blank"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="copyright">
+		<h6>&copy; Сергей Носков, 2020</h6>
+	</section>
+</body>
+</html>
