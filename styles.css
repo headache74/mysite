@@ -35,12 +35,52 @@ body {
   -webkit-text-size-adjust: none;
 }
 
+.swiper-container {
+	width: 100%;
+	max-width: 1170px;
+	margin:0 auto;
+	margin-top: 100px;
+}
+.swiper-container img{
+	max-width: 100%;
+}
+
 .container {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-
+.swiper-button-prev::after {
+	display: none;
+}
+.swiper-button-next::after {
+	display: none;
+}
+.swiper-button-prev, .swiper-button-next {
+	background-color: transparent;
+    background-image: url('img/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    height: 60px;
+    width: 60px;    
+    border: none;
+    border-radius: 60px;
+    box-shadow: 0 0 10px 1px #00000010;
+    top: 68%;
+    transform: translateY(-50%);
+    outline: none;
+}
+.swiper-button-prev {
+	left: -30px;
+}
+.swiper-button-next {
+	right: -30px;
+	transform: rotate(180deg) translateY(30px);
+}
+.swiper-pagination {
+	display: none;
+}
 /*Форма заказа звонка*/
 .callback__popup {
   display: none;
@@ -483,7 +523,7 @@ a:hover {
     box-shadow: 0 0 10px 1px #00000010;
     outline: none;
     cursor: pointer;
-    z-index: 10;
+    z-index: 9;
     top: 365px;
 }
 .btn-arrow__left {
@@ -614,6 +654,19 @@ a:hover {
 
 /*медиа запросы*/
 @media (max-width: 1200px) {
+	.swiper-button-prev, .swiper-button-next {
+		display: none;
+	}
+	.swiper-pagination {
+		display: block;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 760px;
+	}
+	.swiper-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 	.header__menu_mob {
 		display: block;
 		grid-column: span 2;
@@ -754,6 +807,9 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+	.swiper-pagination {
+		top: 450px;
+	}
 	.header {
 		padding-bottom: 30px;
 	}

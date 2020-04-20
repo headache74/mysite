@@ -6,8 +6,11 @@
 	<link rel="preload" href="fonts/roboto.woff2" as="font" type="font/woff2">
 	<link rel="preload" href="fonts/robotobold.woff2" as="font" type="font/woff2">
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script src="js/all.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <link href="css/swiper.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -139,62 +142,44 @@
 		<section class="portfolio" id="mark__portfolio">
 			<div class="container">
 				<div class="portfolio__container">
+					<div class="swiper-button-prev"></div>
+    				<div class="swiper-button-next"></div>
 					<div class="portfolio__top">
 						<h1>Примеры моих работ</h1>
 					</div>
-					<button class="btn-arrow__left"></button>
-					<button class="btn-arrow__right"></button>
-					<div class="portfolio__examples">
-						<div class="slider__curtains_left"></div>
-						<div class="slider__curtains_right"></div>
-						<div class="portfolio__examples_0">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <!-- Slides -->
+					        <div class="swiper-slide">
 								<figure>
-							    	<a href="http://zatochka-maksimum.tmweb.ru/" target="_blank"><img src="img/maksimum.jpg" alt="Сайт студии заточки Максимум" /></a>
+							    	<a href="http://zatochka-maksimum.tmweb.ru/" target="_blank"><img src="img/maksimum1.jpg" alt="Сайт студии заточки Максимум" /></a>
 							    <figcaption class="portfolio__examples_txt">
 							    	Сайт студии заточки<br>&laquo;Максимум&raquo;
 								</figcaption>
 					   			</figure>
-						</div>
-						<div class="portfolio__examples_1">
+					        </div>
+					        <div class="swiper-slide">					        	
 								<figure>
-							    	<a href="http://zatochka-maksimum.tmweb.ru/" target="_blank"><img src="img/maksimum.jpg" alt="Сайт студии заточки Максимум" /></a>
+							    	<a href="http://zatochka-maksimum.tmweb.ru/" target="_blank"><img src="img/maksimum1.jpg" alt="Сайт студии заточки Максимум" /></a>
 							    <figcaption class="portfolio__examples_txt">
 							    	Сайт студии заточки<br>&laquo;Максимум&raquo;
 								</figcaption>
 					   			</figure>
-						</div>
-						<div class="portfolio__examples_2">
-							<figure>
-						    	<a href="http://zatochka-maksimum.tmweb.ru/"><img src="img/maksimum.jpg" alt="Сайт студии заточки Максимум" /></a>
-						    <figcaption class="portfolio__examples_txt">
-						    	Сайт студии заточки<br>&laquo;Максимум&raquo;
-							</figcaption>
-							</figure>
-						</div>
-						<div class="portfolio__examples_3">
-							<figure>
-						    	<a href="#"><img src="img/example-3.jpg" alt="Сайт психолога Веры Антоновой" /></a>
-						    <figcaption class="portfolio__examples_txt">
-						    	Сайт психолога Веры Антоновой
-							</figcaption>
-							</figure>
-						</div>
-						<div class="portfolio__examples_4">
-							<figure>
-						    	<a href="#"><img src="img/example-4.jpg" alt="Сайт психолога Веры Антоновой" /></a>
-						    <figcaption class="portfolio__examples_txt">
-						    	Сайт психолога Веры Антоновой
-							</figcaption>
-							</figure>
-						</div>
+					   		</div>
+					        <div class="swiper-slide">
+					        	<figure>
+							    	<a href="http://zatochka-maksimum.tmweb.ru/" target="_blank"><img src="img/maksimum1.jpg" alt="Сайт студии заточки Максимум" /></a>
+							    <figcaption class="portfolio__examples_txt">
+							    	Сайт студии заточки<br>&laquo;Максимум&raquo;
+								</figcaption>
+					   			</figure>
+					        </div>
+					    </div>
+
 					</div>
-					<div class="slider__buttons">
-						<input name="dzen" type="radio" class="slider__radio_left">
-						<input name="dzen" type="radio" class="slider__radio_center">
-						<input name="dzen" type="radio" class="slider__radio_right">
-					</div>
+					<div class="swiper-pagination"></div>
 					<div class="portfolio__bottom">
-						<button class="portfolio__btn">Заказать проект</button>
+						<button class="portfolio__btn callback-button">Заказать проект</button>
 					</div>
 				</div>
 			</div>
