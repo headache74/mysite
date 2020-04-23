@@ -10,6 +10,7 @@
 	<script src="js/all.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <link href="css/swiper.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,13 +28,14 @@
 	<div class="callback__popup">
 		<form class="callback__form" method="post">
 			<div>Заполните форму и я свяжусь с Вами в течение 15 минут.<br><br></div>
-			<div><label class="callback__form_label">Вас зовут</label></div>
+			<div><label class="callback__form_label" for="callback__name">Вас зовут</label></div>
 			<input type="text" class="callback__form_element" id="callback__name" placeholder="Сергей" required="required">
-			<div><label class="work-element">Ваш номер телефона</label></div>
+			<div><label class="work-element" for="callback__phone">Ваш номер телефона</label></div>
 			<input type="text" class="callback__form_element" id="callback__phone" placeholder="+7 (951) 777-24-49" required="required">
-			<div><label class="work-element">Ваши пожелания</label></div>
-			<div><textarea id="callback__description" required="required" cols="22" rows="6"></textarea></div>
+			<div><label class="work-element" for="callback__description">Ваши пожелания</label></div>
+			<div><textarea id="callback__description" cols="33" rows="6"></textarea></div>
 			<div><button type="submit" class="btn-callback-apply">Заказать звонок</button></div>
+			<div class="callback__form_close-btn close-btn">x</div>
 		</form>
 	</div>
 
@@ -48,6 +50,7 @@
 		          </ul>
 		        </nav>
 	 			<button class="popup__btn callback-button">Заказать звонок</button>
+	 			<div class="popup__menu_close-btn close-btn">x</div>
  			</div>
 	    </div>
 
@@ -187,7 +190,7 @@
 		<section class="price" id="mark__price">
 			<div class="price__container">
 				<h1>Адаптивная вёрстка под все устройства и браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*</h1>
-				<h6>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности&nbsp;задач.</h6>
+				<h6><small>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности&nbsp;задач.</small></h6>
 			</div>
 		</section>
 	</main>
@@ -220,7 +223,7 @@
 		</div>
 	</footer>
 	<section class="copyright">
-		<h6>&copy; Сергей Носков, 2020</h6>
+		<h6><small>&copy; Сергей Носков, 2020</small></h6>
 	</section>
 </body>
 </html>
