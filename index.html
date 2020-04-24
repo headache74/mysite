@@ -8,9 +8,9 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/all.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
     <link href="css/swiper.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,14 +26,12 @@
 </head>
 <body>
 	<div class="callback__popup">
-		<form class="callback__form" method="post">
+		<form class="callback__form" action="https://echo.htmlacademy.ru/" method="post">
 			<div>Заполните форму и я свяжусь с Вами в течение 15 минут.<br><br></div>
 			<div><label class="callback__form_label" for="callback__name">Вас зовут</label></div>
 			<input type="text" class="callback__form_element" id="callback__name" placeholder="Сергей" required="required">
 			<div><label class="work-element" for="callback__phone">Ваш номер телефона</label></div>
 			<input type="text" class="callback__form_element" id="callback__phone" placeholder="+7 (951) 777-24-49" required="required">
-			<div><label class="work-element" for="callback__description">Ваши пожелания</label></div>
-			<div><textarea id="callback__description" cols="33" rows="6"></textarea></div>
 			<div><button type="submit" class="btn-callback-apply">Заказать звонок</button></div>
 			<div class="callback__form_close-btn close-btn">x</div>
 		</form>
@@ -110,8 +108,10 @@
 		</section>
 		<section class="main__services" id="mark__services">
 			<div class="container">
-				<section class="services">
-					<div class="services__top"><h1>Что я делаю</h1></div>
+				<div class="services">
+					<div class="services__top">
+						<h2>Что я делаю</h2>
+					</div>
 					<div class="services__job">
 						<figure>
 						    <img src="img/job-1.png" alt="Вёрстка лендинг-страниц и сайтов любой сложности" />
@@ -139,7 +139,7 @@
 					<div class="services__btn">
 						<a href="#mark__price">Узнать стоимость</a>
 					</div>
-				</section>
+				</div>
 			</div>
 		</section>
 		<section class="portfolio" id="mark__portfolio">
@@ -148,7 +148,7 @@
 					<div class="swiper-button-prev"></div>
     				<div class="swiper-button-next"></div>
 					<div class="portfolio__top">
-						<h1>Примеры моих работ</h1>
+						<h2>Примеры моих работ</h2>
 					</div>
 					<div class="swiper-container">
 					    <div class="swiper-wrapper">
@@ -189,7 +189,7 @@
 		</section>
 		<section class="price" id="mark__price">
 			<div class="price__container">
-				<h1>Адаптивная вёрстка под все устройства и браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*</h1>
+				<h2>Адаптивная вёрстка под все устройства и браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*</h2>
 				<h6><small>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности&nbsp;задач.</small></h6>
 			</div>
 		</section>

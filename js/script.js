@@ -12,6 +12,16 @@ $(function(){
 			$('.callback__popup').fadeOut(400);
 		}
 	});
+	//Отправка формы
+	$('#callback__form').submit(function(){
+	    var $form = $(this);
+	    $.post(
+	        $form.attr('action'), // ссылка куда отправляем данные
+	        $form.serialize()     // данные формы
+	    );
+	    // отключаем действие по умолчанию
+	    return false;
+	});
 
 	//Мобильное меню
 	$('.header__menu_mob').click(function(){
