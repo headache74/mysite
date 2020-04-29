@@ -27,12 +27,12 @@
 <body>
 	<div class="callback__popup">
 		<form class="callback__form" action="https://echo.htmlacademy.ru/" method="post">
-			<div>Заполните форму и я свяжусь с Вами в течение 15 минут.<br><br></div>
-			<div><label class="callback__form_label" for="callback__name">Вас зовут</label></div>
-			<input type="text" class="callback__form_element" id="callback__name" placeholder="Сергей" required="required">
-			<div><label class="work-element" for="callback__phone">Ваш номер телефона</label></div>
-			<input type="text" class="callback__form_element" id="callback__phone" placeholder="+7 (951) 777-24-49" required="required">
-			<div><button type="submit" class="btn-callback-apply">Заказать звонок</button></div>
+			<div class="callback__form_hide">Заполните форму и я свяжусь с Вами в течение 15 минут.<br><br></div>
+			<div ><label class="callback__form_hide callback__form_label" for="callback__name">Вас зовут</label></div>
+			<input type="text" class="callback__form_hide callback__form_element" id="callback__name" placeholder="Сергей" required="required">
+			<div><label class="callback__form_hide work-element" for="callback__phone">Ваш номер телефона</label></div>
+			<input type="text" class="callback__form_hide callback__form_element" id="callback__phone" placeholder="+7 (951) 777-24-49" required="required">
+			<div><button type="submit" class="callback__form_hide btn-callback-apply">Заказать звонок</button></div>
 			<div class="callback__form_close-btn close-btn">x</div>
 		</form>
 	</div>
@@ -97,7 +97,9 @@
 			          <h1 class="general__title">Сергей Носков</h1>
 			          <h2 class="general__subtitle">Frontend-разработчик и веб-верстальщик</h2>
 			        </hgroup>
-			        <button class="general__btn">Узнать больше</button>
+			        <div class="general__btn">
+						<a href="#mark__services">Узнать больше</a>
+					</div>
 		        </div>
 		      </figcaption>
 		      <div class="general__pic">
@@ -190,7 +192,7 @@
 		<section class="price" id="mark__price">
 			<div class="price__container">
 				<h2>Адаптивная вёрстка под все устройства и браузеры от&nbsp;1000&nbsp;рублей всего за&nbsp;4&nbsp;часа.*</h2>
-				<h6><small>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности&nbsp;задач.</small></h6>
+				<p><small>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности&nbsp;задач.</small></p>
 			</div>
 		</section>
 	</main>
@@ -222,8 +224,8 @@
 			</div>
 		</div>
 	</footer>
-	<section class="copyright">
-		<h6><small>&copy; Сергей Носков, 2020</small></h6>
-	</section>
+	<div class="copyright">
+		<small>&copy; Сергей Носков, 2020</small>
+	</div>
 </body>
 </html>
