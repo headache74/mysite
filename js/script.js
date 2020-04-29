@@ -48,7 +48,6 @@ $(function(){
 	});
 
 	$('.popup__menu, .popup, .popup__menu_close-btn').click(function(){
-
 			$('.popup').fadeOut(400);
 	});
 });
