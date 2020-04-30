@@ -95,6 +95,12 @@ body {
 .swiper-pagination {
 	display: none;
 }
+.swiper-pagination-bullet {
+	padding: 8px;
+	background-color: #FF4E2E;
+	margin-left: 10px;
+}
+
 
 /*Форма заказа звонка*/
 .callback__popup {
@@ -131,9 +137,7 @@ body {
   width: 100%;
   margin-bottom: 10px;
 }
-.callback__form_unhide {
-	display: none;
-}
+
 .btn-callback-apply {
   width: 100%;
   height: 40px;
@@ -162,7 +166,6 @@ body {
 	background-color: transparent;
 	cursor: pointer;
 }
-
 
 /*Мобильное меню*/
 .popup {
@@ -238,7 +241,6 @@ body {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
   z-index: 1;
 }
@@ -334,7 +336,6 @@ a:active {
 	background-color: transparent;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr)[12];
 	grid-template-columns: repeat(12, 1fr);
 }
 .general__pic {
@@ -378,8 +379,6 @@ a:active {
     width: 100%;
     height: 100%;
 }
-
-
 .general__btn {
   -ms-grid-column-span: 2;
   grid-column: span 2;
@@ -453,7 +452,6 @@ a:active {
 .services {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
 }
 .services__top {
@@ -521,38 +519,6 @@ a:active {
 	height: 400px;
 	overflow: hidden;
 }
-
-.portfolio__examples_0, .portfolio__examples_1, .portfolio__examples_2, .portfolio__examples_3, .portfolio__examples_4 {
-	position: absolute;
-	-webkit-transition: 2s;
-	-o-transition: 2s;
-	transition: 2s;
-}
-.portfolio__examples_0 {
-	left: -50%;
-	-webkit-transform: translateX(50%);
-	    -ms-transform: translateX(50%);
-	        transform: translateX(50%);
-}
-.portfolio__examples_1 {
-	left: 0;
-}
-.portfolio__examples_2 {
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
-}
-.portfolio__examples_3 {
-	right: 0;
-}
-.portfolio__examples_4 {
-	position: absolute;
-	right: -50%;
-	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%);
-}
 .portfolio__examples_txt {
 	text-align: center;
 	margin-top: 30px;
@@ -618,7 +584,6 @@ a:active {
             transform: rotate(180deg);
 }
 
-
 /*Блок расценок*/
 .price {
 	background: -o-linear-gradient(left bottom, #FF8F5A, #FF2F96);
@@ -653,7 +618,6 @@ a:active {
 .footer__container {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr)[12];
 	grid-template-columns: repeat(12, 1fr);
 }
 .footer__left {
@@ -824,52 +788,6 @@ a:active {
 	.btn-arrow__left, .btn-arrow__right {
 		display: none;
 	}
-	.portfolio__examples_0 {
-		left: 49%;
-		-webkit-transform: translateX(-200%);
-		    -ms-transform: translateX(-200%);
-		        transform: translateX(-200%);
-	}
-	.portfolio__examples_1 {
-		left: 49%;
-		-webkit-transform: translateX(-200%);
-		    -ms-transform: translateX(-200%);
-		        transform: translateX(-200%);
-	}
-	.portfolio__examples_2 {
-		left: 49%;
-		-webkit-transform: translateX(-100%);
-		    -ms-transform: translateX(-100%);
-		        transform: translateX(-100%);
-	}
-	.portfolio__examples_3 {
-		right: 49%;
-		-webkit-transform: translateX(100%);
-		    -ms-transform: translateX(100%);
-		        transform: translateX(100%);
-	}
-	.portfolio__examples_4 {
-		right: 49%;
-		-webkit-transform: translateX(200%);
-		    -ms-transform: translateX(200%);
-		        transform: translateX(200%);
-	}
-
-	.slider__buttons {
-		display: block;
-	}
-	.slider__curtains_left {
-		left: 49%;
-		-webkit-transform: translateX(-200%);
-		    -ms-transform: translateX(-200%);
-		        transform: translateX(-200%);
-	}
-	.slider__curtains_right {
-		right: 49%;
-		-webkit-transform: translateX(200%);
-		    -ms-transform: translateX(200%);
-		        transform: translateX(200%);
-	}
 	.price__container {
 	  	padding-left: 0px;
 	  	padding-right: 0px;
@@ -911,6 +829,12 @@ a:active {
 }
 
 @media (max-width: 850px) {
+	.header__btn_div {
+		padding-left: 0;
+	}
+	.header__btn {
+	  	width: 180px;
+	}
 	.footer__left {
 		-ms-grid-column-span: 12;
 		grid-column: span 12;
@@ -982,6 +906,15 @@ a:active {
 	.general svg {
 		margin-bottom: 242px;
 	}
+	.general__txt {
+		padding-left: 0px;
+		text-align: center;
+	}
+	.general__btn {
+		  text-align: center;
+		  margin-top: 55px;
+		  margin-bottom: 40px;
+	}
 	.portfolio__examples_3 {
 		display: none;
 	}
@@ -1001,7 +934,6 @@ a:active {
 	}
 }
 
-
 @media (max-width: 567px) {
 	.header__tel a {
 		font-size: 18px;
@@ -1010,16 +942,12 @@ a:active {
 		margin-bottom: 192px;
 	}
 	.general__txt {
-
 		overflow: hidden;
 	}
 	.general__pic img {
 		width: 240px;
 	}
-	.general__txt {
-		padding-left: 0px;
-		text-align: center;
-	}
+
 	.general__txt h1 {
 		margin-top: 12px;
 		font-size: 34px;
@@ -1030,6 +958,9 @@ a:active {
 		letter-spacing: 0.1px;
 	}
 	.general__btn {
+		  text-align: center;
+		  margin-top: 55px;
+		  margin-bottom: 40px;
 	}
 	.services__top h2, .portfolio__top h2 {
 		font-size: 30px;
@@ -1066,11 +997,6 @@ a:active {
 	}
 	.portfolio {
     	height: 625px;
-	}
-	.slider__buttons input {
-		top: 450px;
-		width: 15px;
-		height: 15px;
 	}
 	.price {
 		padding-top: 35px;
@@ -1127,5 +1053,13 @@ a:active {
 		font-size: 20px;
 		top: 0px;
 		left: 175px;
+	}
+}
+
+@media (max-width: 343px) {
+	.general__btn {
+		  text-align: center;
+		  margin-top: 37px;
+		  margin-bottom: 40px;
 	}
 }

@@ -18,7 +18,7 @@ function swiperInit() {
     spaceBetween: 20, 
     loop: true,
 
-        // Navigation arrows
+    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -29,6 +29,7 @@ function swiperInit() {
       clickable: true,
     },
   });
+  mySwiper.update();
 }
 
 $(window).on('resize', function () {
